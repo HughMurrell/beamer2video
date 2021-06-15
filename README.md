@@ -29,4 +29,13 @@ temporary directory for storing video frames
 * `vids` 
 temporary dirctory for storing videos
 
+### Usage
+
+* install dependencies
+
+* copy `beam2vid` shell script and the two python scripts from the `bin`
+directory to somewhere in your PATH, eg `/usr/local/bin` and then type
+
+`beam2vid -n Lisa -v Fiona -f basel.tex
+
 

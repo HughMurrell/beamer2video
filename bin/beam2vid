@@ -28,12 +28,12 @@ echo "Base: $base";
 rm frames/*
 rm vids/*
 # rm concatlist.txt
-pdflatex --interaction=batchmode "\def\voice{$voice}\def\narrator{$narrator}\input{basel.tex}"
-pdfannots.py "$file" -o frames/annots.out
+pdflatex --interaction=batchmode "\def\voice{$voice}\def\narrator{$narrator}\input{$base.tex}"
+pdfannots.py "$base.pdf" -o frames/annots.out
 annots2audio.py $narrator $voice frames/annots.out
 ffmpeg -hide_banner -loglevel error \
   -i "clips/$narrator.mp4" -vf scale=160:120 "frames/$narrator.mp4"
-gs -dSAFER -dQUIET -dNOPLATFONTS -sDEVICE=pngalpha -sOutputFile=frames/frame%03d.png -dNOPAUSE -dBATCH -r144 $file
+gs -dSAFER -dQUIET -dNOPLATFONTS -sDEVICE=pngalpha -sOutputFile=frames/frame%03d.png -dNOPAUSE -dBATCH -r144 $base.pdf
 for entry in $(basename -a -s .png frames/frame*.png)
 do
   echo "mixing ......... $entry"
