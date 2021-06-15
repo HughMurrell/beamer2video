@@ -33,9 +33,11 @@ temporary dirctory for storing videos
 
 * install dependencies
 
+* enable text to speech on your mac and test with `say hello`
+
 * copy `beam2vid` shell script and the two python scripts from the `bin`
 directory to somewhere in your PATH, eg `/usr/local/bin` and then type
 
-`beam2vid -n Lisa -v Fiona -f basel.tex
+*`beam2vid -n Lisa -v Fiona -f basel.tex`
 
 
