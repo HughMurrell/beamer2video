@@ -15,18 +15,18 @@ turn Beamer slides to videos.
 ### Directories
 
 * `bin` 
-..*contains beam2vid bash script plus two python scripts
+contains beam2vid bash script plus two python scripts
 
 * `clips` 
-..* for storing short narrator video clip
+for storing short narrator video clip
 
 * `images` 
-..*for storing images used in Beamer slides
+for storing images used in Beamer slides
 
 * `frames` 
-..*temporary directory for storing video frames
+temporary directory for storing video frames
 
 * `vids` 
-..*temporary dirctory for storing videos
+temporary dirctory for storing videos
 
 
