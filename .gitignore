@@ -5,6 +5,9 @@
 *.synctex.gz
 *.pdf
 *.toc
+*.nav
+*.upa
+*.snm
 frames/*.png
 frames/*.aiff
 frames/*.mp4
