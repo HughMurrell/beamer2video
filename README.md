@@ -10,6 +10,7 @@ turn Beamer slides to videos.
 * Python 3
 * [pdfminer.six package](https://github.com/pdfminer/pdfminer.six) and its dependencies; e.g.: `pip3 install pdfminer.six`
 * `ffmpeg` eg: `brew install ffmpeg`
+* `handbreakcli` eg:`brew install handbreakcli`
 * `pdflatex`
 
 ### Directories
@@ -38,6 +39,6 @@ temporary dirctory for storing videos
 * copy `beam2vid` shell script and the two python scripts from the `bin`
 directory to somewhere in your PATH, eg `/usr/local/bin` and then type
 
-*`beam2vid -n Lisa -v Fiona -f basel.tex`
+* `beam2vid -n Lisa -v Fiona -f basel.tex`
 
 
